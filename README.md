@@ -58,6 +58,32 @@ console.log(Math.random()); // Prints a random number between 0 and 1
 console.log(Math.random() * 50; // generate random number between 0 and 50
 ```
 
+## Variables
+
+### var
+Prior to the ES6, programmers could only use the var keyword
+```
+var myName = 'Arya';
+console.log(myName);
+```
+### let
+the let keyword was introduced in ES6. The let keyword signals that the variable can be reassigned a different value. 
+Another concept that we should be aware of when using let (and even var) is that we can declare a variable without assigning the variable a value
+```
+let price;
+console.log(price); // Output: undefined
+price = 350;
+console.log(price); // Output: 350
+```
+
+### const 
+
+const keyword was also introduced in ES6, and is short for the word constant. Just like with var and let you can store any value in a const variable. The way you declare a const variable and assign a value to it follows the same structure as let and var
+
+
+
+
+
 * Math
 
 ```
