@@ -13,11 +13,40 @@
 **compiled data types**
 * Object : Collections of related data
 
+**typeof operator**
+ to keep track of the data types of the variables
+ ```
+ const unknown1 = 'foo';
+console.log(typeof unknown1); // Output: string
+
+const unknown2 = 10;
+console.log(typeof unknown2); // Output: number
+
+const unknown3 = true; 
+console.log(typeof unknown3); // Output: boolean
+ ```
+ 
+ 
+
 ### String
 
 **String Contatenation**
 
 'Hello ' + ' World'
+
+**String Interpolation**
+```
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.
+```
+
+
+```
+let myPet = 'armadillo';
+console.log('I own a pet ' + myPet + '.'); 
+// Output: 'I own a pet armadillo.'
+```
 
 ## Properties
  introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type. 
@@ -80,8 +109,48 @@ console.log(price); // Output: 350
 
 const keyword was also introduced in ES6, and is short for the word constant. Just like with var and let you can store any value in a const variable. The way you declare a const variable and assign a value to it follows the same structure as let and var
 
+> Constant variables must be assigned a value when declared. If you try to declare a const variable without a value, you’ll get a SyntaxError.
 
+> const variable cannot be reassigned because it is constant. If you try to reassign a const variable, you’ll get a TypeError
 
+```
+const myName = 'Gilberto';
+console.log(myName); // Output: Gilberto
+```
+
+### Mathematical Assignment Operators
+
+```
+let w = 4;
+w = w + 1;
+
+console.log(w); // Output: 5
+
+let x = 20;
+x -= 5; // Can be written as x = x - 5
+console.log(x); // Output: 15
+
+let y = 50;
+y *= 2; // Can be written as y = y * 2
+console.log(y); // Output: 100
+
+let z = 8;
+z /= 2; // Can be written as z = z / 2
+console.log(z); // Output: 4
+```
+
+###  Increment and Decrement Operator
+The increment operator will increase the value of the variable by 1. The decrement operator will decrease the value of the variable by 1
+
+```
+let a = 10;
+a++;
+console.log(a); // Output: 11
+
+let b = 20;
+b--;
+console.log(b); // Output: 19
+```
 
 
 * Math
