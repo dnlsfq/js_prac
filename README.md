@@ -199,11 +199,53 @@ console.log(flipCoin());
 
 **Switch**
 
+```
+function simpleSwitch(){
+  let productId = 2;
+  
+  switch(productId){
+    case 1:
+      console.log('Product 1');
+      break;
+    case 2:
+      console.log('Product 2');
+      break;
+    default:
+      console.log('Unknown Product');
+      break;
+  }
+}
+```
+
+* block scope in switch
+```
+function simpleSwitch(){
+  let productId = 2;
+  
+  switch(productId){
+    case 1:{
+      let message = 'HL Road Frame';
+      console.log(message);
+      break;
+    }
+    case 2:{
+      let message = 'Sport 100 Helmet';
+      console.log(message);
+      break;
+    }
+    default:{
+      let message = 'Mountain Bike';
+      console.log(message);
+      break;
+    }
+  }
+}
+```
 
 
+*
 
-
-**Comparison**
+*Comparison**
 
 * == 
 
